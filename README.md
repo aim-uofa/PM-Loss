@@ -1,0 +1,66 @@
+<p align="center">
+  <!-- <img src="https://lhmd.top/zpressor/assets/favicon.svg" alt="ZPressor Logo" style="width: 50px; height: 50px; margin-right: 20px;"> -->
+  <h1 align="center">Revisiting Depth Representations for Feed-Forward 3D Gaussian Splatting</h1>
+  <p align="center">
+    <a href="https://openreview.net/profile?id=~Duochao_Shi1">Duochao Shi*</a>
+    .
+    <a href="https://lhmd.top">Weijie Wang*</a>
+    ·
+    <a href="https://donydchen.github.io">Donny Y. Chen</a>
+    ·
+    <a href="https://steve-zeyu-zhang.github.io">Zeyu Zhang</a>
+    ·
+    <a href="https://jwbian.net/">Jia-Wang Bian</a>
+    ·
+    <a href="https://bohanzhuang.github.io">Bohan Zhuang</a>
+    ·
+    <a href="https://cshen.github.io/">Chunhua Shen</a>
+  </p>
+  <h3 align="center"><a href="https://dc-walker.github.io/pmloss/">Paper</a> | <a href="https://dc-walker.github.io/pmloss/">Project Page</a> | <a href="https://dc-walker.github.io/pmloss/">Models</a> </h3>
+  <div align="center"></div>
+</p>
+<p align="center">
+  <a href="">
+    <img src="/assets/teaser.png" alt="Logo" width="100%">
+  </a>
+</p>
+
+
+<p align="center">
+We introduce <strong>PM-Loss</strong>, a novel regularization loss based on a learned point map for feed-forward 3DGS,  leading to smoother 3D geometry and better rendering.
+</p>
+
+## Method
+<p align="center">
+  <a href="">
+    <img src="/assets/pipeline.png" alt="Logo" width="100%">
+  </a>
+</p>
+<strong>Overview of our PM-Loss</strong>.
+The process begins by estimating a dense point map of the scene using a pre-trained model. 
+This estimated point map then serves as direct 3D supervision for training a feed-forward 3D Gaussian Splatting model. 
+Crucially, unlike conventional methods relying predominantly on 2D supervision, our approach leverages explicit 3D geometric cues, leading to enhanced 3D shape fidelity.
+
+
+## TODOs
+- [ ] Release Code.
+- [ ] Release Model Checkpoints.
+
+## Citation
+If you find our work useful for your research, please consider citing us:
+
+```bibtex
+@inproceedings{shi2025pmloss,
+  title={Revisiting Depth Representations for Feed-Forward 3D Gaussian Splatting},
+  author={Shi, Duochao and Wang, Weijie and Chen, Donny Y. and Zhang, Zeyu and Bian, Jiawang and Zhuang, Bohan and Shen, Chunhua},
+  booktitle={Arxiv},
+  year={2025}
+}
+```
+## Contact
+If you have any questions, please create an issue on this repository or contact at 
+dcshi@zju.edu.cn
+
+## Acknowledgements
+
+This project is developed with several fantastic repos: [VGGT](https://github.com/facebookresearch/vggt), [MVSplat](https://github.com/donydchen/mvsplat) and [DepthSplat](https://github.com/cvg/depthsplat). We thank the original authors for their excellent work.
