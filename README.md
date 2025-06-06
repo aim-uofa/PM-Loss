@@ -16,7 +16,7 @@
     ·
     <a href="https://cshen.github.io/">Chunhua Shen</a>
   </p>
-  <h3 align="center"><a href="https://dc-walker.github.io/pmloss/">Paper</a> | <a href="https://dc-walker.github.io/pmloss/">Project Page</a> | <a href="https://dc-walker.github.io/pmloss/">Models</a> </h3>
+  <h3 align="center"><a href="https://arxiv.org/abs/2506.05327">Paper</a> | <a href="https://aim-uofa.github.io/PMLoss/">Project Page</a> | <a href="https://aim-uofa.github.io/PMLoss/">Models</a> </h3>
   <div align="center"></div>
 </p>
 <p align="center">
@@ -53,7 +53,7 @@ If you find our work useful for your research, please consider citing us:
 @inproceedings{shi2025pmloss,
   title={Revisiting Depth Representations for Feed-Forward 3D Gaussian Splatting},
   author={Shi, Duochao and Wang, Weijie and Chen, Donny Y. and Zhang, Zeyu and Bian, Jiawang and Zhuang, Bohan and Shen, Chunhua},
-  booktitle={Arxiv},
+  journal={arXiv preprint arXiv:2506.05327},
   year={2025}
 }
 ```
