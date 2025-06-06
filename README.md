@@ -50,7 +50,7 @@ Crucially, unlike conventional methods relying predominantly on 2D supervision, 
 If you find our work useful for your research, please consider citing us:
 
 ```bibtex
-@inproceedings{shi2025pmloss,
+@article{shi2025pmloss,
   title={Revisiting Depth Representations for Feed-Forward 3D Gaussian Splatting},
   author={Shi, Duochao and Wang, Weijie and Chen, Donny Y. and Zhang, Zeyu and Bian, Jiawang and Zhuang, Bohan and Shen, Chunhua},
   journal={arXiv preprint arXiv:2506.05327},
