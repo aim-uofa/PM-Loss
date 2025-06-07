@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/favicon.svg" alt="Logo" style="width: 70px; height: 70px; margin-right: 20px;">
+  <img src="assets/favicon.svg" alt="Logo" style="width: 70px; height: 70px; margin-right: 20px; margin-bottom: -30px;">
   <h1 align="center">Revisiting Depth Representations for Feed-Forward 3D Gaussian Splatting</h1>
   <p align="center">
     <a href="https://github.com/dc-walker">Duochao Shi*</a>
