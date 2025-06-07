@@ -2,7 +2,7 @@
   <!-- <img src="https://lhmd.top/zpressor/assets/favicon.svg" alt="ZPressor Logo" style="width: 50px; height: 50px; margin-right: 20px;"> -->
   <h1 align="center">Revisiting Depth Representations for Feed-Forward 3D Gaussian Splatting</h1>
   <p align="center">
-    <a href="https://openreview.net/profile?id=~Duochao_Shi1">Duochao Shi*</a>
+    <a href="https://github.com/dc-walker">Duochao Shi*</a>
     .
     <a href="https://lhmd.top">Weijie Wang*</a>
     ·
