@@ -30,6 +30,9 @@
 We introduce <strong>PM-Loss</strong>, a novel regularization loss based on a learned point map for feed-forward 3DGS,  leading to smoother 3D geometry and better rendering.
 </p>
 
+## News
+- **09/06/25 Update:** Check out our <a href="https://github.com/ziplab/ZPressor">ZPressor</a>, a plug-and-play module that compresses multi-view inputs for scalable feed-forward 3DGS, enabling existing feed-forward 3DGS models to scale to over 100 input views!
+
 ## Method
 <p align="center">
   <a href="">
