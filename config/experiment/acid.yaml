@@ -1,0 +1,78 @@
+# @package _global_
+
+defaults:
+  - override /dataset: re10k
+  - override /model/encoder: depthsplat
+  - override /loss: [mse, lpips, pcd]
+
+wandb:
+  name: acid
+  tags: [acid, 256x448]
+
+data_loader:
+  train:
+    batch_size: 14
+
+trainer:
+  max_steps: 300_001
+  num_nodes: 1
+
+# ----- Additional params for default best model customization
+model:
+  encoder:
+    num_depth_candidates: 128
+    costvolume_unet_feat_dim: 128
+    costvolume_unet_channel_mult: [1,1,1]
+    costvolume_unet_attn_res: [4]
+    gaussians_per_pixel: 1
+    depth_unet_feat_dim: 32
+    depth_unet_attn_res: [16]
+    depth_unet_channel_mult: [1,1,1,1,1]
+    # shim_patch_size: 16
+    upsample_factor: 4
+    feature_upsampler_channels: 128
+    lowest_feature_resolution: 8
+    monodepth_vit_type: vitb
+    num_scales: 2
+    gaussian_regressor_channels: 32
+    color_large_unet: true
+    return_depth: true
+    offset_mode: ori
+    offset_factor: 0.5
+    confidence_activation: null
+
+# lpips loss
+loss:
+  lpips:
+    apply_after_step: 0
+    weight: 0.05
+
+dataset: 
+  image_shape: [256, 448]
+  roots: [datasets/acid]
+  near: 1.
+  far: 100.
+  baseline_scale_bounds: false
+  make_baseline_1: false
+  min_views: 0
+  max_views: 0
+  highres: false
+  view_sampler:
+    num_target_views: 4
+    num_context_views: 4
+    min_distance_between_context_views: 50
+    max_distance_between_context_views: 100
+
+test:
+  eval_time_skip_steps: 5
+  compute_scores: true
+  dec_chunk_size: 30
+
+  
+checkpointing:
+  every_n_train_steps: 30000
+  pretrained_model: depthsplat_pretrained/depthsplat-gs-base-dl3dv-256x448-75cc0183.pth
+  pretrained_monodepth: depthsplat_pretrained/depth_anything_v2_vitb.pth
+  pretrained_mvdepth: depthsplat_pretrained/gmflow-scale1-things-e9887eda.pth
+  no_strict_load: true
+  

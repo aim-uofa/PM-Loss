@@ -1,0 +1,6 @@
+pcd:
+  weight: 0.005
+  apply_after_step: 0
+  gt_mode: vggt
+  loss_mode: 3d
+  ignore_large_loss: 100.0

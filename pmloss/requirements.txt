@@ -1,0 +1,3 @@
+einops
+jaxtyping
+pytorch3d
