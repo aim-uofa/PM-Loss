@@ -24,4 +24,5 @@ svg.py
 opencv-python>=4.8.1.78
 sk-video
 timm
-./pmloss
+moviepy<2.0
+git+https://github.com/dc-walker/pmloss

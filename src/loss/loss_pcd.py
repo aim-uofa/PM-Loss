@@ -28,7 +28,7 @@ class LossPcd(Loss[LossPcdCfg, LossPcdCfgWrapper]):
     def __init__(self, cfg: LossPcdCfgWrapper) -> None:
         super().__init__(cfg)
         # Initialize the reusable PM-Loss metric
-        self.pm_loss = PMLoss()
+        self.pm_loss = PMLoss(model=self.cfg.gt_mode)
 
         convert_to_buffer(self.pm_loss, persistent=False)
     

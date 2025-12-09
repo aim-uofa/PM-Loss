@@ -51,9 +51,13 @@ pip install git+https://github.com/facebookresearch/pytorch3d.git # For training
 pip install -r requirements.txt
 ```
 
-We also provide a pip-installable package for PM-Loss. If you want to use our loss function in your own project, you can install it directly by running:
+### Using PM-Loss as a Standalone Module
+If you only wish to use the PM-Loss function in your own project without cloning this entire training framework, you can install the independent package directly:
 ```bash
-pip install git+https://github.com/aim-uofa/PM-Loss#subdirectory=pmloss # need pytorch3d installed
+# Install the standalone pmloss package
+pip install git+https://github.com/dc-walker/pmloss
+# NOTE: PyTorch3D is required as a dependency for the loss function itself.
+# Ensure you install PyTorch3D separately if you encounter issues.
 ```
 
 ## Datasets
