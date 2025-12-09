@@ -87,11 +87,11 @@ To render novel views and compute evaluation metrics from a pretrained model,
 ```bash
 # dl3dv
 python -m src.main \
-+experiment=re10k mode=test \
++experiment=dl3dv mode=test \
 dataset/view_sampler=evaluation \
 dataset.image_shape=[256,448] \
 dataset.view_sampler.num_context_views=2 \
-dataset.view_sampler.index_path=assets/re10k_bound_aware.json \
+dataset.view_sampler.index_path=assets/dl3dv_bound_aware.json \
 model.encoder.multiview_trans_nearest_n_views=3 \
 model.encoder.costvolume_nearest_n_views=3 \
 model.encoder.offset_mode=unconstrained \
